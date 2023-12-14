@@ -1,0 +1,80 @@
+html
+{
+    scroll-behavior: smooth;
+}
+.bt
+{
+border-style:none;
+border-color:white;
+font-family: Arial, Helvetica, sans-serif;
+font-size:medium;
+background-color:rgba(0, 0, 255,0.8);
+height:40px;
+width:130px;
+padding:2px;
+color:white;
+animation:di 1s ease-in 1s infinite normal;
+}
+@keyframes di {
+    from{border-style:none;border-color:white;}
+    to{border-style:solid;border-color:antiquewhite;}
+    
+}
+#hea
+{
+    width:100%;
+    height:26px;
+    background-color:orange;
+    position:fixed;
+}
+#he
+{
+font-size: larger;
+font-family: Arial, Helvetica, sans-serif;
+color:white;
+text-decoration:underline;
+position:fixed;
+margin-left:400px;
+margin-top:1px;
+}
+.bt:hover
+{
+border-color:whitesmoke;
+background-color:brown;
+}
+table
+{
+box-shadow: 3px 3px 2px 4px;
+height:500px;
+margin-left:450px;
+height:640px;
+
+}
+th{
+    background-color: rgba(0, 0, 255,0.6);
+    color:white;
+}
+
+tr{
+    background-color:rgba(255, 165, 0,0.4);
+}
+tr:hover
+{
+
+color:white;
+background-color: orange;
+}
+#semb
+{
+    position:fixed;
+    top:190px;
+    left:40px;
+}
+body
+{
+background-image:url(./promedia/bg.png);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+background-size:cover;
+}

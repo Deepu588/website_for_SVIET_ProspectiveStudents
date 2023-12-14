@@ -1,0 +1,106 @@
+html{
+    scroll-behavior: smooth;
+}
+.tt
+{
+    background-color:rgba(0,0,255,0.7);
+    border-color:none;
+    font-family:Arial, Helvetica, sans-serif;
+    color:white;
+}
+.ttr
+{
+    background-color:rgba(0,0,255,0.7);
+    border-color:none;
+    font-family:Arial, Helvetica, sans-serif;
+    color:white;
+}
+td{
+    background-color:rgba(255, 165, 0,0.3);
+}
+tr:hover
+{
+    color:white;
+    background-color:orange;
+    border-color:white;
+    
+    
+}
+body
+{
+    background-image: url(./promedia/bg.png);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position:center;
+    background-size:cover;
+}
+#bt
+{
+    height:40px;
+    width:100px;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: large;
+    background-color:hsla(240, 100%, 50%,0.8);
+    border-style:none;
+}
+#bt:hover
+{
+    background-color: black;
+}
+
+
+#h
+{
+    text-transform:uppercase;
+    text-decoration:underline;
+    text-decoration-color:rgba(0,0,0,0.4);
+}
+
+.drt
+{
+ height:40px;
+ width:150px;
+ background-color:hsla(240, 100%, 50%,0.8);
+ color:white;
+ border-style:none;
+ border-color:white;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.drt:hover
+{
+    background-color:black;
+}
+
+#nabar
+{
+    list-style-type:none;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    text-decoration: none;
+    justify-content: space-evenly;
+
+}
+#naabar
+{
+    padding-top:5px;
+    background-color:rgba(0, 0, 255,0.7);
+    height:30px;
+    margin-top:1px;
+    
+}
+
+#nabar a
+{
+
+    color:white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: large;
+}
+#nabar a:hover
+{
+    color:orange;
+}

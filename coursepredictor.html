@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c51795afff.js" crossorigin="anonymous"></script>
+
+    <title>RANK PREDICTOR</title>
+    <style>
+.main
+{
+    margin-top:140px;
+    margin-left:320px;
+    border:3px lightgrey solid;
+    height:430px;
+    width:800px;
+    padding:3px;
+    box-shadow: 3px 3px 2px 2px whitesmoke;
+    background-color: white;
+
+}
+.image
+{
+    margin:20px;
+
+}
+.frm
+{
+    background-color: whitesmoke;
+    margin:20px;
+
+}
+.frfld
+{
+    border-top-style:none;
+    border-left-style:none;
+    border-right-style:none;
+    border-top-color:white;
+    border-left-color:white;
+    border-right-color:white;
+    border-bottom-style: solid;
+    border-bottom-color:black;
+    border-bottom-width:2px;
+    width:240px;
+    height:30px;
+    color:blue;
+    font-size: medium;
+}
+
+body
+{
+    background-image: url(./promedia/bg.png);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position:center;
+    background-size:cover;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <button style="position: absolute;top:5%;right:3%;background-color: blue;color:white;border-style:none;height:40px;width:170px;"><a href="main.html" style="text-decoration: none;color:white;"><i class="fa-solid fa-arrow-left"></i> BACK TO MAIN PAGE</a></button>
+
+    <div class="main">
+        <p style="color:red;font-size: medium;position:absolute;top:20%;left:24%;">**All fields are Mandatory</p>
+    <div class="image">
+<img src="./promedia/checking.jpg" height="320px" width="300px" style="float:left;margin:30px;">
+    </div>
+    <div class="frm">
+        <table cellpadding="10px"  style="margin:35px;"    height="300px" width="300px">
+            <tr>
+                <th>
+                    <b style="color:blue;">RANK PREDICTOR</b>
+                </th>
+            </tr>
+            <tr>
+                <td><i class="fa-solid fa-user" style="color:blue;"></i> &nbsp; &nbsp;<input type="text" required autocomplete="off" class="frfld" placeholder="Enter your name" id="username"></td>
+            </tr>
+            <tr>
+                <td><i class="fa-solid fa-venus-mars" style="color:blue;"></i>&nbsp; &nbsp;<input list="genders" required autocomplete="off" class="frfld" placeholder="Male/Female" id="gen">
+                    <datalist id="genders">
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+            <td><i class="fa-solid fa-list-check" style="color:blue;"></i>&nbsp; &nbsp;<input list="category" required autocomplete="off" class="frfld" placeholder="OC/BC/SC/ST" id="cat">
+                            <datalist id="category">
+                                <option value="oc">oc</option>
+                                <option value="oc-ews">oc-ews</option>
+                                <option value="sc">sc</option>
+                                <option value="st">st</option>
+                                <option value="bc-a">bc-a</option>
+                                <option value="bc-b">bc-b</option>
+                                <option value="bc-c">bc-c</option>
+                                <option value="bc-d">bc-d</option>
+                                <option value="bc-e">bc-e</option>
+
+                            </datalist>
+            </td>
+            </tr>
+            <tr>
+                <td><i class="fa-solid fa-ranking-star" style="color:blue;"></i>&nbsp; &nbsp;<input type="tel" required autocomplete="off" class="frfld" placeholder="Enter your  rank "    id="ranking"></td>
+            </tr>
+            <tr>
+                <td><i class="fa-solid fa-building-columns" style="color:blue;"></i>&nbsp; &nbsp;<input type="text" required autocomplete="off" class="frfld" value="SVIET Nandamuru" readonly id="college"></td>
+            </tr>
+            <tr>
+                <td align="center">
+                  &nbsp;  &nbsp;&nbsp; <input type="submit" onclick="validating()"  style="height:30px;width:100px;background-color:blue;color:white;border-style:none;border-color:white;">&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" onclick="window.location.reload()"  style="height:30px;width:100px;background-color:blue;color:white;border-style:none;border-color:white;">
+                </td>
+            </tr>
+        </table>
+
+    </div>
+    <p id="ddd" style="color:red;font-size: medium;position:absolute;top:76%;left:35%;">You can check ap eamcet rank here   --> <a href="https://cets.apsche.ap.gov.in/EAPCET/Eapcet/EAPCET_GetRankCard.aspx"  style="text-decoration:none;color:blue">CLICK HERE</a></p>
+
+    </div>
+    <br>
+   <center> <i class="fa-solid fa-hand-point-right" style="color:blue;"></i> AP EAMCET 2022 LAST RANK DETAILS ARE AVAILABLE --> <a href="./promedia/APEAMCET2022LASTRANKDETAILS.pdf" style="text-decoration:none;color:blue">  <b>CLICK HERE</b></a></center>
+   
+   
+   <br>
+   <script>
+        
+        function validating()
+        {
+
+
+            
+                  
+        var studentName=document.getElementById("username").value;
+        var rank=document.getElementById("ranking").value;
+        var z=document.getElementById("gen");
+        var gender=z.value;
+        var v=document.getElementById("cat");
+        var category=v.value;
+        var collegeName=document.getElementById("college").value;
+
+        if(rank>=200000)
+            {
+                window.alert("ENTER A VALID RANK")
+            }
+            
+        else if(studentName.length==0 || rank.length==0|| gender.length==0 || category.length==0|| collegeName.length==0 )
+        {
+           if(studentName=="")          
+            {
+            window.alert("PLEASE FILL THE STUDENT NAME")
+            }
+            else if(rank=="")          
+            {
+            window.alert("PLEASE FILL THE RANK")
+
+            }
+           else if(gender=="")          
+            {
+            window.alert("PLEASE FILL THE GENDER")
+
+            }
+           else if(category=="")
+            {
+                window.alert("PLEASE FILL THE CATEGORY")
+
+            }
+           else if(collegeName="")
+            {
+                window.alert("PLEASE FILL THE COLLEGE NAME")
+            }
+        }
+        else
+        {
+           window.alert("YOUR DETAILS ARE SUBMITTED")
+ document.write("<div style='margin-top:140px;margin-left:360px;border:2px double blue;background-color:rgba(0,0,255,0.8);color:white;padding:30px;height:440px;width:700px;'>")
+                    document.write("<center>RESULT </center>")
+                    document.write("<b>&nbsp;&nbsp;&nbsp;YOUR DETAILS      <br><br>")
+                    document.write("<b>NAME : "+studentName.toUpperCase()+"</b><br>")
+                    document.write("<b>GENDER : "+gender.toUpperCase()+"</b><br>")
+                    document.write("<b>CATEGORY : "+category.toUpperCase()+"</b><br>")
+                    document.write("<b>RANK : "+rank+"</b><br>")
+                    document.write("<b>COLLEGE : "+collegeName.toUpperCase()+"</b><br><br>")
+                        document.writeln("<h3>HELLO "+studentName.toUpperCase()+",</h3>")
+                        document.writeln("<h3> BASED ON THE  ENTERED DETAILS AND SVIET COLLEGE PREVIOUS CUTOFF RANK WE HAVE PREDICTED THE RESULT/COURSES FOR YOU ..</h3>")
+
+            let a="<b style='color:red;font-size:20px;'>COMPUTER SCIENCE AND ENGINEERING </b><br>";
+            let b="<b style='color:red;font-size:20px;'>ELECTRONICS AND COMMUNICATION ENGINEERING</b><br>";
+            let c="<b style='color:red;font-size:20px;'>ELECTRICAL AND ELECTRONICS ENGINEERING</b><br>";
+            let d="<b style='color:red;font-size:20px;'>MECHANICAL ENGINEERING</b><br>";
+            let e="<b style='color:red;font-size:20px;'>Sorry!! You dont have sufficient rank</b><br>";
+
+
+
+
+
+            if(gender=="male")
+            {
+
+                if(category=="oc" && rank>104459)
+                {
+                        document.write(e)
+                }
+                if(category=="oc" && (rank>=1 && rank<=104459 ))
+                {
+                        document.write(a)
+                    //CSE
+                }
+                
+                if(category=="oc" && (rank>=1 && rank<=79820 ))
+                {
+                  
+                    document.write(b)
+
+                }
+                
+                if(category=="oc" && (rank>=1 && rank<=99981 ))
+                {
+                    
+                    document.write(c)
+
+                }
+                if(category=="oc" && (rank>=1 && rank<=99981 ))
+                {
+                    
+                    document.write(d)
+
+                }
+
+
+                if(category=="sc" && rank>171958)
+                {
+                        document.write(e)
+                }
+                if(category=="sc" && (rank>=1 && rank<=171958 ))
+                {
+                    //CSE
+                    document.write(a)
+
+                }
+                
+                if(category=="sc" && (rank>=1 && rank<=89561 ))
+                {
+                    //ECE
+                    document.write(b)
+
+                }
+                
+                if(category=="sc" && (rank>=1 && rank<=171902 ))
+                {
+                    //MECH
+                    document.write(c)
+                  
+                }
+                if(category=="sc" && (rank>=1 && rank<=171902 ))
+                {
+                   
+                    document.write(d)
+                    //EEE
+                }
+
+
+
+                if(category=="st" && rank>147529)
+                {
+                        document.write(e)
+                }
+                if(category=="st" && (rank>=1 && rank<=145414 ))
+                {
+                    //CSE
+                    document.write(a)
+
+                }
+                
+                if(category=="st" && (rank>=1 && rank<=89615 ))
+                {
+                    //ECE
+                    document.write(b)
+
+                }
+                
+                if(category=="st" && (rank>=1 && rank<=147529 ))
+                {
+                    //MECH
+                    //EEE
+                    document.write(c)
+                }
+                if(category=="st" && (rank>=1 && rank<=147529 ))
+                {
+                    document.write(d)
+                }
+                
+
+
+                if(category=="bc-a" && rank>162246)
+                {
+                        document.write(e)
+                }
+                if(category=="bc-a" && (rank>=1 && rank<=130333 ))
+                {
+                    //CSE
+                    document.write(a)
+
+                }
+                
+                if(category=="bc-a" && (rank>=1 && rank<=156257 ))
+                {
+                    //ECE
+                    document.write(b)
+
+                }
+                
+                if(category=="bc-a" && (rank>=1 && rank<=162246 ))
+                {
+                    
+                    //EEE
+                    document.write(c)
+                }
+                if(category=="bc-a" && (rank>=1 && rank<=162246 ))
+                {
+                    //MECH
+                    document.write(d)
+                }
+
+
+
+
+                if(category=="bc-b" && rank>168784)
+                {
+                        document.write(e)
+                }
+                if(category=="bc-b" && (rank>=1 && rank<=122981 ))
+                {
+                    //CSE
+                    document.write(a)
+
+                }
+                
+                if(category=="bc-b" && (rank>=1 && rank<=136508 ))
+                {
+                    //ECE
+                    document.write(b)
+
+                }
+                
+                if(category=="bc-b" && (rank>=1 && rank<=168784 ))
+                {
+                    //EEE
+                    document.write(c)
+                }
+                if(category=="bc-b" && (rank>=1 && rank<=168784 ))
+                {
+                    //MECH
+                   
+                    document.write(d)
+                }
+
+
+
+
+                if(category=="bc-c" && rank>104459)
+                {
+                        document.write(e)
+                }
+                if(category=="bc-c" && (rank>=1 && rank<=104459 ))
+                {
+                    //CSE
+                    document.write(a)
+
+                }
+                
+                if(category=="bc-c" && (rank>=1 && rank<=79820 ))
+                {
+                    //ECE
+                    document.write(b)
+
+                }
+                
+                if(category=="bc-c" && (rank>=1 && rank<=99981 ))
+                {
+                    //EEE
+                    document.write(c)
+                }
+                if(category=="bc-c" && (rank>=1 && rank<=99981 ))
+                {
+                    //MECH
+                   
+                    document.write(d)
+                }
+
+
+
+                if(category=="bc-d" && rank>1666957)
+                {
+                        document.write(e)
+                }                
+                if(category=="bc-d" && (rank>=1 && rank<=1666957 ))
+                {
+                    //CSE
+                    document.write(a)
+
+                }
+                
+                if(category=="bc-d" && (rank>=1 && rank<=149868 ))
+                {
+                    //ECE
+                    document.write(b)
+
+                }
+                
+                if(category=="bc-d" && (rank>=1 && rank<=166296 ))
+                {
+                    //EEE
+                    document.write(c)
+                }
+                if(category=="bc-d" && (rank>=1 && rank<=166296 ))
+                {
+                    //MECH
+                    document.write(d)
+                }
+
+
+
+
+                if(category=="bc-e" && rank>165738)
+                {
+                        document.write(e)
+                }
+                if(category=="bc-e" && (rank>=1 && rank<=108335 ))
+                {
+                    //CSE
+                    document.write(a)
+
+                }
+                
+                if(category=="bc-e" && (rank>=1 && rank<=141614 ))
+                {
+                    //ECE
+                    document.write(b)
+
+                }
+                
+                if(category=="bc-e" && (rank>=1 && rank<=165738 ))
+                {
+                    //EEE
+                    document.write(c)
+                }
+                if(category=="bc-e" && (rank>=1 && rank<=165738 ))
+                {
+                    //MECH
+                    document.write(d)
+                }
+
+
+
+                if(category=="oc-ews" && rank>135809)
+                {
+                        document.write(e)
+                }
+                if(category=="oc-ews" && (rank>=1 && rank<=129230 ))
+                {
+                    //CSE
+                    document.write(a)
+
+                }
+                
+                if(category=="oc-ews" && (rank>=1 && rank<=89866 ))
+                {
+                    //ECE
+                    document.write(b)
+
+                }
+                
+                if(category=="oc-ews" && (rank>=1 && rank<=135809 ))
+                {
+                    //EEE
+                    document.write(c)
+                }
+
+                if(category=="oc-ews" && (rank>=1 && rank<=135809 ))
+                {
+                    //MECH
+                    document.write(d)
+                }
+            }
+
+        
+
+            if(gender=="female")
+            {
+
+                if(category=="oc" && rank>118949)
+                {
+                        document.write(e)
+                }
+                if(category=="oc" && (rank>=1 && rank<=104459 ))
+                {
+                        document.write(a)
+                    //CSE
+                }
+                
+                if(category=="oc" && (rank>=1 && rank<=80873))
+                {
+                  
+                    document.write(b)
+
+                }
+                
+                if(category=="oc" && (rank>=1 && rank<=118949 ))
+                {
+                    
+                    document.write(c)
+
+                }
+                if(category=="oc" && (rank>=1 && rank<=118949 ))
+                {
+                    
+                    document.write(d)
+
+                }
+
+
+
+                if(category=="sc" && rank>171958)
+                {
+                        document.write(e)
+                }
+                if(category=="sc" && (rank>=1 && rank<=171958 ))
+                {
+                    //CSE
+                    document.write(a)
+
+                }
+                
+                if(category=="sc" && (rank>=1 && rank<=89561 ))
+                {
+                    //ECE
+                    document.write(b)
+
+                }
+                
+                if(category=="sc" && (rank>=1 && rank<=171902 ))
+                {
+                    //MECH
+                    document.write(c)
+                   
+                }
+                 
+                if(category=="sc" && (rank>=1 && rank<=171902 ))
+                {
+                   
+                    document.write(d)
+                    //EEE
+                }
+
+
+                if(category=="st" && rank>147529)
+                {
+                        document.write(e)
+                }
+                if(category=="st" && (rank>=1 && rank<=145414 ))
+                {
+                    //CSE
+                    document.write(a)
+
+                }
+                
+                if(category=="st" && (rank>=1 && rank<=89615 ))
+                {
+                    //ECE
+                    document.write(b)
+
+                }
+                
+                if(category=="st" && (rank>=1 && rank<=147529 ))
+                {
+                    //EEE
+                    document.write(c)
+                }
+                if(category=="st" && (rank>=1 && rank<=147529 ))
+                {
+                    //MECH
+                    document.write(d)
+                }
+                
+
+
+                if(category=="bc-a" && rank>162246)
+                {
+                        document.write(e)
+                }
+                if(category=="bc-a" && (rank>=1 && rank<=130333 ))
+                {
+                    //CSE
+                    document.write(a)
+
+                }
+                
+                if(category=="bc-a" && (rank>=1 && rank<=156257 ))
+                {
+                    //ECE
+                    document.write(b)
+
+                }
+                
+                if(category=="bc-a" && (rank>=1 && rank<=162246 ))
+                {
+                    //EEE
+                    document.write(c)
+                }
+                if(category=="bc-a" && (rank>=1 && rank<=162246 ))
+                {
+                    //MECH
+                    document.write(d)
+                }
+
+
+
+
+
+                if(category=="bc-b" && rank>168784)
+                {
+                        document.write(e)
+                }
+                if(category=="bc-b" && (rank>=1 && rank<=122981 ))
+                {
+                    //CSE
+                    document.write(a)
+
+                }
+                
+                if(category=="bc-b" && (rank>=1 && rank<=139920))
+                {
+                    //ECE
+                    document.write(b)
+
+                }
+                
+                if(category=="bc-b" && (rank>=1 && rank<=168784 ))
+                {
+                    //EEE
+                    document.write(c)
+                }
+                if(category=="bc-b" && (rank>=1 && rank<=168784 ))
+                {
+                    //MECH
+                    document.write(d)
+                }
+
+
+
+                if(category=="bc-c" && rank>118949)
+                {
+                        document.write(e)
+                }
+                if(category=="bc-c" && (rank>=1 && rank<=104459 ))
+                {
+                    //CSE
+                    document.write(a)
+
+                }
+                
+                if(category=="bc-c" && (rank>=1 && rank<=80873 ))
+                {
+                    //ECE
+                    document.write(b)
+
+                }
+                
+                if(category=="bc-c" && (rank>=1 && rank<=118949 ))
+                {
+                    //EEE
+                    document.write(c)
+                }
+                if(category=="bc-c" && (rank>=1 && rank<=118949 ))
+                {
+                    //MECH
+                    document.write(d)
+                }
+
+
+
+
+                if(category=="bc-d" && rank>1666957)
+                {
+                        document.write(e)
+                }                
+                if(category=="bc-d" && (rank>=1 && rank<=1666957 ))
+                {
+                    //CSE
+                    document.write(a)
+
+                }
+                
+                if(category=="bc-d" && (rank>=1 && rank<=149868 ))
+                {
+                    //ECE
+                    document.write(b)
+
+                }
+                
+                if(category=="bc-d" && (rank>=1 && rank<=166296 ))
+                {
+                    //EEE
+                    document.write(c)
+                }
+                if(category=="bc-d" && (rank>=1 && rank<=166296 ))
+                {
+                    //MECH
+                    document.write(d)
+                }
+
+
+
+                if(category=="bc-e" && rank>167786)
+                {
+                        document.write(e)
+                }
+                if(category=="bc-e" && (rank>=1 && rank<=108335 ))
+                {
+                    //CSE
+                    document.write(a)
+
+                }
+                
+                if(category=="bc-e" && (rank>=1 && rank<=167786 ))
+                {
+                    //ECE
+                    document.write(b)
+
+                }
+                
+                if(category=="bc-e" && (rank>=1 && rank<=165738 ))
+                {
+                    //EEE
+                    document.write(c)
+                }
+                if(category=="bc-e" && (rank>=1 && rank<=165738 ))
+                {
+                    //MECH
+                    document.write(d)
+                }
+
+
+
+
+                if(category=="oc-ews" && rank>140428)
+                {
+                        document.write(e)
+                }
+                if(category=="oc-ews" && (rank>=1 && rank<=76692 ))
+                {
+                    //CSE
+                    document.write(a)
+
+                }
+                
+                if(category=="oc-ews" && (rank>=1 && rank<=140428 ))
+                {
+                    //ECE
+                    document.write(b)
+
+                }
+                
+                if(category=="oc-ews" && (rank>=1 && rank<=92655))
+                {
+                    //EEE
+                    document.write(c)
+                }
+                if(category=="oc-ews" && (rank>=1 && rank<=92655))
+                {
+                    //MECH
+                   
+                    document.write(d)
+                }
+
+             }
+ document.writeln("<br><center><button type='button' onclick='window.location.reload();' style='background-color:white;color:blue;height:30px;width:200px;padding:5px;'>CLEAR </button></center>")
+
+ document.write("</div>")
+
+       // window.alert("Hello !!!  "+studentName+" Your Rank is "+rank+" your are a "+gender+"you are "+category);
+       // document.getElementById("ddd").innerHTML="hai"+x+"YOU ARE "+gender;
+
+         }
+        }
+    </script>
+</body>
+</html>

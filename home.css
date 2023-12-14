@@ -1,0 +1,232 @@
+html{
+    scroll-behavior: smooth;
+}
+#humd
+{
+    width:100%;
+    height:550px;
+}
+#mp
+{
+    
+    width:100%;
+    height:140px;
+    background-color: white;
+    margin-top: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.ora
+{
+    font-family:Arial, Helvetica, sans-serif;
+    color:brown;
+}
+.bl
+{
+    font-family:Arial, Helvetica, sans-serif;
+    color:rgba(0, 0, 255,0.8);
+} 
+#cn
+{
+    font-size:25px;
+}
+#svl
+{
+    float:left;
+    margin-left: 150px;
+    margin-top:10px;
+    height:130px;
+    width:140px;
+}
+#a
+{
+    margin-left:210px;
+    font-size:17px;
+}
+#b
+{
+    margin-left:265px;
+}
+#c
+{
+    margin-left:349px;
+}
+#naac
+{
+    float:right;
+    margin-right:26px;
+    height:80px;
+    width:90px;
+    margin-top:25px;
+}
+
+#iso
+{
+    float:right;
+    margin-right:20px;
+    height:80px;
+margin-top:25px;
+width:80px;
+}
+
+#about
+{
+    border-style:none;
+    border-color:white;
+    background-color:brown;
+    color:white;
+    padding:5px;
+    height:160px;
+    width:65%;
+    font-size:larger;
+    line-height:20px;
+}
+#about:hover{
+    color:brown;
+    background-color:white;
+    border-style:ridge;
+    border-color:brown;
+}
+
+body
+{
+    background-image: url(./promedia/bg.png);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position:center;
+    background-size:cover;
+}
+#loc
+{
+    border-style:none;
+    border-color:white;
+    background-color:rgba(0, 0, 255,0.8);
+    color:white;
+    padding:5px;
+    height:160px;
+    width:65%;
+    font-size:larger;
+    line-height:25px;
+}
+#loc:hover{
+    color:rgba(0, 0, 255,0.8);
+    background-color:white;
+    border-style:ridge;
+    border-color:rgba(0, 0, 255,0.8);;
+}
+
+#vis
+{
+    border-style:none;
+    border-color:white;
+    background-color:brown;
+    color:white;
+    padding:5px;
+    height:160px;
+    width:65%;
+    font-size:larger;
+    line-height:20px;
+}
+#vis:hover{
+    color:brown;
+    background-color:white;
+    border-style:ridge;
+    border-color:brown;
+}
+
+#miss
+{
+    border-style:none;
+    border-color:white;
+    background-color:rgba(0, 0, 255,0.8);
+    color:white;
+    padding:5px;
+    height:160px;
+    width:65%;
+    font-size:larger;
+    line-height:25px;
+    margin-left:17%;
+}
+#miss:hover{
+    color:rgba(0, 0, 255,0.8);
+    background-color:white;
+    border-style:ridge;
+    border-color:rgba(0, 0, 255,0.8);;
+}
+
+#accr
+{
+    border-style:none;
+    border-color:white;
+    background-color:brown;
+    color:white;
+    padding:5px;
+    height:160px;
+    width:65%;
+    font-size:larger;
+    line-height:25px;
+}
+#accr:hover{
+    color:brown;
+    background-color:white;
+    border-style:ridge;
+    border-color:brown;
+}
+
+#qp
+{
+    border-style:none;
+    border-color:white;
+    background-color:rgba(0, 0, 255,0.8);
+    color:white;
+    padding:5px;
+    height:170px;
+    width:65%;
+    font-size:larger;
+    line-height:25px;
+}
+#qp:hover{
+    color:rgba(0, 0, 255,0.8);
+    background-color:white;
+    border-style:ridge;
+    border-color:rgba(0, 0, 255,0.8);;
+}
+
+#bt
+{
+    height:40px;
+    width:100px;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: large;
+    background-color:brown;
+    border-style:none;
+}
+#bt:hover
+{
+    background-color:white;
+    color:brown;
+}
+
+#nava
+{
+    height:30px;
+    width:100%;
+    border-style:none;
+    border-color:white;
+    background-color:brown;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    
+    font-size:17px;
+    padding-top:9px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.c:hover
+{
+text-decoration: underline;
+    text-decoration-color:blue;
+    font-size:larger;
+}
+
+

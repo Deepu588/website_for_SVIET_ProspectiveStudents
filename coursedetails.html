@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./coursedetails.css">
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://kit.fontawesome.com/c51795afff.js" crossorigin="anonymous"></script>
+  <style>
+    .item
+    {
+      height:70px;
+      width:220px;
+      color:brown;
+      background-color:bisque;
+      margin:14px;
+      padding:35px;
+      border-top-style:ridge ;
+      border-right-style:ridge ;
+      border-color:brown;
+      border-width:5px;
+      box-shadow:3px -3px 3px 3px gray;
+    }
+    .item:hover
+    {
+      background-color:white;
+      
+    }
+    #maindivv
+    {
+        
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content:space-evenly;
+
+    }
+
+    .buo
+    {
+      background-color: brown;
+        margin-right:3px;
+      border-style:none;
+      border-color:white;
+      height:30px;
+      width:90px;
+      margin-top:5px;
+    }
+    .anch
+    {
+      color:white;
+      text-decoration:none;
+    }
+
+    #nabar
+{
+    list-style-type:none;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    text-decoration: none;
+    justify-content: space-evenly;
+
+}
+#naabar
+{
+    padding-top:5px;
+    background-color:rgba(0, 0, 255,0.7);
+    height:30px;
+    margin-top:1px;
+    
+}
+
+#nabar a
+{
+
+    color:white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: large;
+}
+#nabar a:hover
+{
+    color:orange;
+}
+  </style>
+</head>
+<body>
+
+    
+    <div id="mp">
+        <img src="./promedia/SVIET-LOGO-Edited.png" id="svl">
+        <img src="./promedia/colllog1.jpeg" id="naac">
+        <img src="./promedia/Untitled-design-19.png" id="iso">
+        <br><br>
+  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;   <b class="bl" id="cn">SRI VASAVI INSTITUTE OF ENGINEERING AND TECHNOLOGY </b><br>
+
+      <b class="ora" id="a"> Approved By AICTE,New Delhi & Affiliated to JNTUK, Kakinada </b>
+        <br>
+      <b class="bl" id="b">Accrediated by NAAC, NBA (CSE,ECE,MEC)</b>
+        <br>
+        <b class="ora" id="c">An Autonomous Institute</b>
+        
+       
+    </div>
+    <div id="naabar">
+      <ul id="nabar">
+          <li><a href="home.html"><i class="fa-solid fa-house" style="font-size:large;"></i> HOME</a></li>
+          <li><a href="Admissions.html"><i class="fa-solid fa-user-graduate" style="font-size:large;"></i> ADMISSIONS</a></li>
+
+          <li><a href="collegeofficials.html"><i class="fa-solid fa-address-card" style="font-size:large;"></i> ABOUT</a></li>
+          <li><a href="library.html"><i class="fa-solid fa-book" style="font-size: large;"></i> LIBRARY</a></li>
+          <li><a href="events.html"><i class="fa-solid fa-bomb" style="font-size: large;"></i> EVENTS</a></li>
+          <li><a href="faculties.html"><i class="fa-solid fa-person-chalkboard" style="font-size: large;"></i> FACULTY</a></li>
+          <li><a href="placements.html"><i class="fa-solid fa-user-graduate" style="font-size: large;"></i> PLACEMENTS</a></li>
+          <li><a href="coursedetails.html" style="color:orange;"><i class="fa-solid fa-circle-info" style="font-size:large;"></i> COURSEDETAILS</a></li>
+          <li><a href="courses.html"><i class="fa-solid fa-rectangle-list" style="font-size:large;"></i> COURSES</a></li>
+          <li><a href="enquiry.html"><i class="fa-solid fa-envelope" style="font-size: large;"></i> ENQUIRY</a></li>
+
+
+      </ul>
+  </div>
+
+    
+      <marquee bgcolor="orange" >  *** BRANCH WISE SUBJECTS LIST ALONG WITH THEIR CODES ARE AVAILABLE IN BELOW LINKS ***</marquee>
+    
+    <br><br><br>
+    <center>
+    <a href="cse.html" target="_blank"><button class="bt"> CSE</button></a>
+    <a href="ece.html" target="_blank"><button class="bt"> ECE</button></a>
+    <a href="eee.html" target="_blank"><button class="bt"> EEE</button></a>
+    <a href="mech.html" target="_blank"><button class="bt"> MECH</button></a>
+    </center>
+    <br><br> 
+    
+    <br><br>    
+ <center>  
+<table id="tbb" height="320px" width="800px" cellpadding="3px" cellspacing="3px" border="2px">
+  <tr>
+    <th colspan="4">COURSES DETAILS</th>
+  </tr>
+<tr>
+  <th>DEPARTMENT NAME </th>
+  <th>STUDENTS INTAKE</th>
+  <th>FACULITY:STUDENT</th>
+  <th>LABORATORIES</th>
+</tr>
+<tr>
+  <td align="center" class="dn"><a href="mech.html">Mechanical</a></td>
+  <td align="center">60 </td>
+  <td align="center">1:15</td>
+  <td align="center">12</td>
+</tr>
+<tr>
+  <td align="center" class="dn"><a href="cse.html">Computer science</a></td>
+  <td align="center">90</td>
+  <td align="center">1:15</td>
+  <td align="center">6</td>
+</tr>
+<tr>
+  <td align="center" class="dn"><a href="ece.html">Electronics and communication</a></td>
+  <td align="center">60-120</td>
+  <td align="center">1:15</td>
+  <td align="center">4</td>
+</tr>
+<tr>
+  <td align="center" class="dn"><a href="eee.html">Electrical and Electronics</a></td>
+  <td align="center">120</td>
+  <td align="center">1:15</td>
+  <td align="center">14</td>
+</tr>
+</table>
+ </center>
+    <br><br>
+    
+    <div id="maindivv">
+      <div class="item">JNTUK R-19 CSE SYLLABUS<center><button class="buo"><a href="./promedia/r19cses.pdf" class="anch">VIEW HERE</a></button><button class="buo"><a href="./promedia/r19cses.pdf" download="cse r19 syllabi" class="anch">DOWNLOAD </a></button></center></div>
+      <div class="item">JNTUK R-19 ECE SYLLABUS<center><button class="buo"><a href="./promedia/r19eces.pdf" class="anch">VIEW HERE</a></button><button class="buo"><a href="./promedia/r19eces.pdf" download="ece r19 syllabi" class="anch">DOWNLOAD </a></button></center></div>
+      <div class="item">JNTUK R-19 EEE SYLLABUS<center><button class="buo"><a href="./promedia/r19eees.pdf" class="anch">VIEW HERE</a></button><button class="buo"><a href="./promedia/r19eees.pdf" download="eee r19 syllabi" class="anch">DOWNLOAD </a></button></center></div>
+      <div class="item">JNTUK R-19 MEC SYLLABUS<center><button class="buo"><a href="./promedia/r19mechs.pdf" class="anch">VIEW HERE</a></button><button class="buo"><a href="./promedia/r19mechs.pdf" download="mech r19 syllabi" class="anch">DOWNLOAD </a></button></center></div>
+
+    </div>
+    <br><br>
+<center>
+
+    <div class="cs">
+      <h3 >Department of computer science and engineering</h3>
+              <p>
+                Computer science and engineering (CSE) is an academic program at many universities which comprises scientific and engineering aspects of computing. CSE is also a term often used in Europe to translate the name of engineering informatics academic programs. It is offered in both undergraduate as well postgraduate with specializations.
+              </p>
+    </div>
+    <br><br><br>
+    <div class="cs">
+        <h3>Department of Electronics & Communications Engineering</h3>
+        <p>
+        The Electronics and Communications Engineering Department at SVIET College is dedicated to fostering excellence in the field. With a focus on electronics and communications, our program equips students with the knowledge and skills to tackle the ever-evolving technological landscape.
+            </p>
+      </div>
+    
+    <br><br><br>
+    <div class="cs">
+      <h3>Department of Electrical and Electronics Engineering</h3>
+      <p>The Department of Electrical and Electronics Engineering at our institute is at the forefront of powering innovation and technology. With a strong emphasis on electrical systems, electronics, and renewable energy, we equip students with the skills and knowledge to shape the future of the industry.</p>
+    </div>
+    
+    
+    <br><br> <br>
+    <div class="cs">
+<h3>Department of Mechanical Engineering</h3>
+<p>
+  At SVIET College, the Mechanical Engineering program is designed to provide students with the breadth and depth of knowledge and skills required to excel in the design, fabrication, and maintenance of a wide range of objects, from everyday items like safety pins to cutting-edge technologies like spacecraft. 
+</p>
+ </div>
+    <br><br><br>
+
+
+</center>
+    <center><a href="main.html"><button class="bt" style="width:110px;height:50px;">&lt;&lt; BACK</button></a></center>
+    <br><br><br>
+
+</body>
+</html>
